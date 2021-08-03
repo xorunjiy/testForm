@@ -1,0 +1,46 @@
+ [
+    {
+   "name": "login",
+    "fieldId": "form-text",
+    "fieldType": "text",
+    "value": "",
+    "required": true
+  },
+  {
+    "name": "radio",
+     "fieldId": "form-radio1",
+     "fieldType": "radio",
+     "value": false,
+     "required": false
+   },
+   {
+    "name": "radio",
+     "fieldId": "form-radio2",
+     "fieldType": "radio",
+     "value": false,
+     "required": false
+   },
+   {
+    "name": "checkbox",
+     "fieldId": "form-checkbox",
+     "fieldType": "checkbox",
+     "value": "checkbox",
+     "required": false
+   },
+   {
+    "name": "textarea",
+     "fieldId": "form-textarea",
+     "fieldType": "textarea",
+     "value": "checkbox",
+     "required": true
+   },
+   {
+    "name": "select",
+     "fieldId": "form-select",
+     "fieldType": "select",
+     "value": ["test1", "test2", "test3"],
+     "required": false
+   }
+]
+
+

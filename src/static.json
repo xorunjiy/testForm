@@ -1,0 +1,46 @@
+[
+  {
+ "name": "age",
+  "fieldId": "form-select1",
+  "fieldType": "select",
+  "value": ["11", "33", "55"],
+  "required": false
+},
+{
+  "name": "login",
+   "fieldId": "form-text1",
+   "fieldType": "text",
+   "value": "",
+   "required": true
+ },
+ {
+  "name": "password",
+   "fieldId": "form-text2",
+   "fieldType": "text",
+   "value": "",
+   "required": false
+ },
+ {
+  "name": "checkbox",
+   "fieldId": "form-checkbox",
+   "fieldType": "checkbox",
+   "value": "",
+   "required": false
+ },
+ {
+  "name": "comment",
+   "placeholder": "",
+   "fieldId": "form-textarea",
+   "fieldType": "textarea",
+   "value": "checkbox",
+   "required": true
+ },
+ {
+  "name": "lang",
+   "placeholder": "",
+   "fieldId": "form-select",
+   "fieldType": "select",
+   "value": ["rus", "eng", "arab"],
+   "required": false
+ }
+]
