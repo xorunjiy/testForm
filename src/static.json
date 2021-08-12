@@ -1,46 +1,72 @@
 [
   {
- "name": "age",
-  "fieldId": "form-select1",
-  "fieldType": "select",
-  "value": ["11", "33", "55"],
-  "required": false
-},
-{
-  "name": "login",
-   "fieldId": "form-text1",
+ "name": "input",
+  "fieldId": "formText",
+  "validationType": "string",
+  "fieldType": "password",
+  "value": "",
+  "validationRules": [{"type": "min",
+    "argument": "5",
+    "message": "error: enter more than 5 characters"
+   }]
+} ,
+ {
+  "name": "input2",
+   "fieldId": "form-text",
+   "validationType": "string",
    "fieldType": "text",
-   "value": "",
-   "required": true
+   "value": "test",
+   "required": true,
+   "validationRules": [{"type": "max",
+    "argument": "7",
+    "message": "error: enter no more than 7 characters"
+   }],
+  "ErorMessage": "textEror"
  },
  {
-  "name": "password",
-   "fieldId": "form-text2",
-   "fieldType": "text",
-   "value": "",
-   "required": false
- },
- {
-  "name": "checkbox",
-   "fieldId": "form-checkbox",
-   "fieldType": "checkbox",
-   "value": "",
-   "required": false
- },
- {
-  "name": "comment",
-   "placeholder": "",
-   "fieldId": "form-textarea",
-   "fieldType": "textarea",
-   "value": "checkbox",
-   "required": true
- },
- {
-  "name": "lang",
-   "placeholder": "",
-   "fieldId": "form-select",
+  "name": "select2",
+   "fieldId": "form-select2",
+   "validationType": "string",
    "fieldType": "select",
-   "value": ["rus", "eng", "arab"],
-   "required": false
- }
+   "value": ["test1", "test2", "test3"],
+   "validationRules": [{"type": "oneOf",
+    "argument": ["test2", "test1"],
+    "message": "please select one of test2, test3"
+   }]
+ } ,
+  {
+   "name": "checkbox",
+    "fieldId": "form-checkbox",
+    "validationType": "string",
+    "fieldType": "checkbox",
+    "value": "checkbox",
+    "validationRules": [{"type": "required",
+     "message": "error: must be chosen"
+    }],
+    "required": "true"
+
+  },
+  {
+   "name": "textarea",
+    "fieldId": "formtextarea",
+    "validationType": "string",
+    "fieldType": "textarea",
+    "value": "",
+    "validationRules": [{"type": "max",
+     "argument": "10",
+     "message": "error: enter no more than 10 characters"
+    }],
+   "ErorMessage": "textEror"
+  },
+  {
+   "name": "select",
+    "fieldId": "form-select",
+    "validationType": "string",
+    "fieldType": "select",
+    "value": ["test1", "test2", "test3"],
+    "validationRules": [{"type": "max",
+     "argument": "10",
+     "message": "error: enter no more than 10 characters"
+    }]
+  }
 ]
